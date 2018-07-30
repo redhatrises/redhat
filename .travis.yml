@@ -1,7 +1,8 @@
 sudo: required
 
 before_install:
+  - sudo apt-get -qq update
   - wget `curl -s https://api.github.com/repos/opencontrol/compliance-masonry/releases/latest?access_token=$GITHUB_TOKEN | jq -r ".assets[] | select(.name | test(\"(compliance-masonry_[0-9].[0-9].[0-9])_linux_amd64.deb\")) | .browser_download_url"`
 
 install:
-  - apt install ./compliance-masonry_*.deb
+  - sudo apt install ./compliance-masonry_*.deb
