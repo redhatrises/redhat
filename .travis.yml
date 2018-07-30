@@ -6,3 +6,6 @@ before_install:
 
 install:
   - sudo apt install ./compliance-masonry_*.deb
+
+script:
+  - masonry --help
