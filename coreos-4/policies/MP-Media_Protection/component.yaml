@@ -8,7 +8,12 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |-
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
         This control reflects organizational procedure/policy and is not
         applicable to CoreOS configuration.
 
